@@ -3,7 +3,7 @@ import './Header.css'
 function Header() {
   return (
     <div className="header">
-        <h1>Christelle Souka</h1>
+        <h1>Madelyn Torff</h1>
         <nav>
             <ul>
                 <li><a href="#about">About</a></li>

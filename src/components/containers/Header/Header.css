@@ -5,6 +5,7 @@
   justify-content: space-between;
   font-size: 18px;
   align-items: center;
+  z-index: 1;
 }
 
 h1 {

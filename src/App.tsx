@@ -7,8 +7,8 @@ function App() {
   return (
     <>
       <div className="App">
-        <img src='/assets/yellow-background.png' alt='yellow background' className='yellow-bg'></img>
-        <img src='/assets/image.png' alt='portrait' className='photo'></img>
+        <img src='/assets/app/yellow-background.png' alt='yellow background' className='yellow-bg'></img>
+        <img src='/assets/app/image.png' alt='portrait' className='photo'></img>
         <Header/>
         <Main/>
         <Footer/>

@@ -3,18 +3,11 @@
   flex: 1;
   flex-direction: column;
   margin: 0 6em;
+  background-color: #F9FAFF;
 }
 
-img {
+img.yellow-bg, img.photo {
   display: flex;
   position: absolute;
   right: 0;
-}
-
-img.yellow-bg {
-    z-index: -2;
-}
-
-img.photo {
-    z-index: -1;
 }
