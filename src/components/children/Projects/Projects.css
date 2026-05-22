@@ -1,0 +1,17 @@
+.projects {
+    padding: 0 10em;
+    font-family: 'Nunito';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h3 {
+    font-family: 'Playfair Display';
+    font-weight: 700;
+    font-size: 48px;
+    color: #25282B;
+    border-bottom: solid 4px #FDC435;
+    padding-bottom: 0.25em;
+}
