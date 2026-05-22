@@ -1,0 +1,42 @@
+.project {
+    background-color: white;
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    margin: 2em 0;
+    border-radius: 1em;
+    box-shadow: 0 6px 60px 0 lightgray;
+}
+
+.project-image {
+    width: 496px;
+    height: 526px;
+    border-radius: 0 1em 1em 0;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+.projet-texte {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 3em;
+    color: #828282;
+}
+
+h4 {
+    font-family: 'Playfair Display';
+    font-weight: 700;
+    font-size: 2em;
+    color: #25282B;
+    margin: 0;
+}
+
+.project-button {
+    color: #25282B;
+    border: solid 1px #25282B;
+    border-radius: 2em;
+    background-color: white;
+    box-shadow: none;
+    width: fit-content;
+}
