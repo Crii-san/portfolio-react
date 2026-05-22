@@ -1,0 +1,29 @@
+.header {
+  font-family: 'Comfortaa', 'Arial';
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 18px;
+  align-items: center;
+}
+
+h1 {
+  font-size: 18px;
+  text-align: center;
+  font-weight: 500;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-between;
+}
+
+li {
+  padding: 0 0 0 3em;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
