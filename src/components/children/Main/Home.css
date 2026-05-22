@@ -1,0 +1,48 @@
+/* Home component */
+.home {
+  padding: 5em 0;
+  font-family: 'Nunito';
+}
+
+.intro {
+  width: 30em;
+}
+
+.job-title {
+  color: #FDC435;
+  font-weight: 700;
+}
+
+h2 {
+  font-family: 'Poppins';
+  font-weight: 800;
+  font-size: 64px;
+  margin: 0;
+  line-height: 1.1;
+  color: #25282B;
+}
+
+.home-paragraph {
+  color: #828282;
+  font-size: 24px;
+  text-align: justify;
+}
+
+button {
+  padding: 0.5em 1em;
+  font-family: 'Roboto';
+  box-shadow: 0px 5px 5px lightgray;
+  margin-right: 1em;
+  border-radius: 10px;
+  font-size: 18px;
+  border: none;
+}
+
+.button-yellow {
+  background-color: #FDC435;
+}
+
+.button-white {
+  border: 1px #25282B solid;
+  background-color: white;
+}
