@@ -1,73 +1,99 @@
-# React + TypeScript + Vite
+<h1 align="center">Projet Portfolio en React</h3>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![App Screenshot](public/assets/app-screen.png)
 
-Currently, two official plugins are available:
+<!-- TABLE OF CONTENTS -->
+## Sommaire
+<ol>
+  <li>
+    <a href="#about-the-project">À propos</a>
+    <ul>
+      <li><a href="#design">Ressource de design</a></li>
+      <li><a href="#built-with">Technologies</a></li>
+    </ul>
+  </li>
+  <li>
+    <a href="#getting-started">Configuration</a>
+    <ul>
+      <li><a href="#prerequisites">Prérequis</a></li>
+      <li><a href="#installation">Installation</a></li>
+    </ul>
+  </li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#acknowledgments">Ressources</a></li>
+</ol>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-## React Compiler
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+<!-- ABOUT THE PROJECT -->
+## À propos du projet <a id="about-the-project"></a>
 
-## Expanding the ESLint configuration
+Ce projet transforme une maquette professionnelle en un site
+web fonctionnel, performant et responsive.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Ressource de design <a id="design"></a>
+La maquette est disponible sur Figma via le lien suivant :  
+https://www.figma.com/design/mia4DAviXoGlmtZGMX95Jx/Personal-Portfolio-Website-Template--node-id=0-1&p=f&t=4jIvVt9ynZh4hGWo-0
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### Technologies <a id="built-with"></a>
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+* [![Typescript][Typescript]][Typescript-url]
+* [![React][React.js]][React-url]
+* [![Vite][Vite]][Vite-url]
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+
+<!-- GETTING STARTED -->
+## Configuration <a id="getting-started"></a>
+
+### Prérequis <a id="prerequisites"></a>
+
+Pour faire tourner ce projet, vous devez avoir installé [Node.js](https://nodejs.org/). Les outils comme **Vite** et **TypeScript** seront ensuite gérés localement ou globalement.  
+
+Assurez-vous d'avoir la dernière version de npm installée :
+```sh
+npm install npm@latest -g
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Installation <a id="installation"></a>
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+1. Cloner le dépôt
+  ```sh
+  git clone https://github.com/Crii-san/portfolio-react.git
+  ```
+2. Installer les packages npm
+  ```sh
+  npm install
+  ```
+3. Lancer le serveur de développement
+  ```sh
+  npm run dev
+  ```
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+<!-- CONTACT -->
+## Contact <a id="contact"></a>
+
+Christelle SOUKA - christelle.souka@efrei.net
+
+Project Link : [https://github.com/Crii-san/portfolio-react](https://github.com/Crii-san/portfolio-react)
+
+
+<!-- ACKNOWLEDGMENTS -->
+## Ressources  <a id="acknowledgments"></a>
+
+* [Img Shields](https://shields.io)
+* [Font Awesome](https://fontawesome.com)
+* [React Icons](https://react-icons.github.io/react-icons/search)
+
+<p align="right">(<a href="#readme-top">Retour en haut</a>)</p>
+
+
+<!-- MARKDOWN LINKS -->
+[React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
+[React-url]: https://reactjs.org/
+
+[Vite]: https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=Vite&logoColor=white
+[Vite-url]: https://vite.dev/guide/
+
+[Typescript]: https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white
+[Typescript-url]: https://www.typescriptlang.org/
+
