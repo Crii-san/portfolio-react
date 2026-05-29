@@ -1,4 +1,5 @@
-<h1 align="center">Projet Portfolio en React</h3>
+<h1 align="center">Projet Portfolio en React</h1>
+<h2 align="center">Christelle SOUKA</h2>
 
 ![App Screenshot](public/assets/app-screen.png)
 
