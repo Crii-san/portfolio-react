@@ -41,6 +41,7 @@ https://www.figma.com/design/mia4DAviXoGlmtZGMX95Jx/Personal-Portfolio-Website-T
 * [![Typescript][Typescript]][Typescript-url]
 * [![React][React.js]][React-url]
 * [![Vite][Vite]][Vite-url]
+* [![Tailwind][Tailwind]][Tailwind-url]
 
 
 <!-- GETTING STARTED -->
@@ -98,3 +99,5 @@ Project Link : [https://github.com/Crii-san/portfolio-react](https://github.com/
 [Typescript]: https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white
 [Typescript-url]: https://www.typescriptlang.org/
 
+[Tailwind]: https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white
+[Tailwind-url]: https://www.typescriptlang.org/
