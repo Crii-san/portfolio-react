@@ -15,12 +15,12 @@ function Header() {
             </a>
           </li>
           <li className="pl-12">
-            <a href="#projects" className="no-underline text-black">
+            <a href="/#projects" className="no-underline text-black">
               Projects
             </a>
           </li>
           <li className="pl-12">
-            <a href="#contacts" className="no-underline text-black">
+            <a href="/contact" className="no-underline text-black">
               Contacts
             </a>
           </li>
