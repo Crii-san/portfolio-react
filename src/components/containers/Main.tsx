@@ -1,5 +1,5 @@
-import Home from "../../children/Home/Home";
-import Projects from "../../children/Projects/Projects";
+import Home from "../children/Home";
+import Projects from "../children/Projects";
 
 function Main() {
   return (
