@@ -1,34 +1,44 @@
-import About from './components/children/About'
-import Footer from './components/containers/Footer'
-import Header from './components/containers/Header'
-import Main from './components/containers/Main'
-import { Routes, Route } from 'react-router-dom'
+import { lazy, Suspense } from 'react';
+import { Routes, Route } from 'react-router-dom';
+import RootLayout from './layouts/RootLayout';
+import ProjectDetail from './pages/ProjectDetail';
+
+const Main = lazy(() => import('./pages/Main'));
+const About = lazy(() => import('./pages/About'));
+const Contacts = lazy(() => import('./pages/Contacts'));
+const Login = lazy(() => import('./pages/Login'));
+//const AdminProjects = lazy(() => import('./pages/AdminProjects'));
+
+const PageLoader = () => (
+  <div className="flex-1 flex items-center justify-center bg-[#F9FAFF]">
+    <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#FDC435]"></div>
+  </div>
+);
+
 
 function App() {
   return (
-    <div className="flex flex-col flex-1 mx-24 bg-[#F9FAFF]">
-      {/*
-      <img
-        src="/assets/app/yellow-background.png"
-        alt="yellow background"
-        className="absolute right-0"
-      />
-
-      <img
-        src="/assets/app/image.png"
-        alt="portrait"
-        className="absolute right-0"
-      />
-      */}
-
-      <Header />
+    <Suspense fallback={<PageLoader />}>
       <Routes>
-        <Route path="/" element={<Main />} />
-        <Route path="/about" element={<About />} />
+        <Route path="/" element={<RootLayout />}>
+          <Route index element={<Main />} />
+          <Route path="about" element={<About />} />
+          <Route path="contact" element={<Contacts />} />
+          <Route path="/project/:id" element={<ProjectDetail />} />
+        </Route>
+
+        <Route path="/login" element={<Login />} />
+
+        {/* Zone Protégée Admin */}
+        {/*
+        <Route path="/admin/projects" element={
+          <ProtectedRoute>
+            <AdminProjects />
+          </ProtectedRoute>
+        } /> */}
       </Routes>
-      <Footer />
-    </div>
-  )
+    </Suspense>
+  );
 }
 
-export default App
+export default App;
