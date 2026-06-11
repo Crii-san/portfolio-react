@@ -1,19 +1,26 @@
-import './App.css'
 import Footer from './components/containers/Footer/Footer'
 import Header from './components/containers/Header/Header'
 import Main from './components/containers/Main/Main'
 
 function App() {
   return (
-    <>
-      <div className="App">
-        <img src='/assets/app/yellow-background.png' alt='yellow background' className='yellow-bg'></img>
-        <img src='/assets/app/image.png' alt='portrait' className='photo'></img>
-        <Header/>
-        <Main/>
-        <Footer/>
-      </div>
-    </>
+    <div className="flex flex-col flex-1 mx-24 bg-[#F9FAFF]">
+      <img
+        src="/assets/app/yellow-background.png"
+        alt="yellow background"
+        className="absolute right-0"
+      />
+
+      <img
+        src="/assets/app/image.png"
+        alt="portrait"
+        className="absolute right-0"
+      />
+
+      <Header />
+      <Main />
+      <Footer />
+    </div>
   )
 }
 

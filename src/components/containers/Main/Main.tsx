@@ -1,12 +1,12 @@
-import Home from "../../children/Main/Home";
+import Home from "../../children/Home/Home";
 import Projects from "../../children/Projects/Projects";
 
 function Main() {
   return (
-    <div className="home">
-      <Home/>
-      <Projects/>
-    </div>
+    <main className="flex items-center font-nunito flex-col">
+      <Home />
+      <Projects />
+    </main>
   );
 }
 
