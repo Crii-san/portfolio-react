@@ -13,3 +13,11 @@ export interface ContactMessageType {
   createdAt: string;
   read: boolean;
 }
+
+export interface TestimonialType {
+  id: number;
+  name: string;
+  role: string;
+  text: string;
+  avatar: string;
+}
