@@ -1,27 +1,25 @@
-import Project from './Project';
-
-interface Project {
-  name: string;
-  description: string;
-  image: string;
-}
+import Project from "../components/children/Project.tsx";
+import type { ProjectType } from "../types/index.ts";
 
 function Projects() {
-  const projects: Project[] = [
+  const projects: ProjectType[] = [
     {
-      name: 'Project Name',
+      id: 1,
+      title: 'Project Name',
       description:
         'I created this personal project in order to show how to create an interface in Figma using a portfolio as an example.',
       image: '/assets/projects/woman.jpg',
     },
     {
-      name: 'Project Name',
+      id: 2,
+      title: 'Project Name',
       description:
         'What was your role, your deliverables, if the project was personal, freelancing.',
       image: '/assets/projects/calendar.jpg',
     },
     {
-      name: 'Project Name',
+      id: 3,
+      title: 'Project Name',
       description:
         'You can also add in this description the type of the project, if it was for web, mobile, electron.',
       image: '/assets/projects/phone.jpg',
@@ -31,9 +29,8 @@ function Projects() {
   return (
     <section
       id="projects"
-      className="flex flex-col items-center justify-center px-6 md:px-16 lg:px-40 font-nunito pb-50"
+      className="flex flex-col items-center justify-center px-6 md:px-16 lg:px-40 font-nunito pb-10"
     >
-      {/* Titre */}
       <div className="flex flex-col items-center">
         <h3 className="text-[48px] font-bold text-[#25282B] font-playfair">
           Projects
@@ -45,7 +42,7 @@ function Projects() {
       {projects.map((project, index) => (
         <Project
           key={index}
-          name={project.name}
+          name={project.title}
           description={project.description}
           image={project.image}
           reverse={index % 2 === 1}
